@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 700px;
+    background: #bdc3c7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(210, 29%, 24%, 0.657), hsla(204, 8%, 76%, 0.712)), url(../img/portada2.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(210, 29%, 24%, 0.657), hsla(204, 8%, 76%, 0.712)), url(../img/portada2.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav>a {
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav>a:hover {
+    text-decoration: underline;
+}
+
+header.textos-header {
+    display: flex;
+    height: 230px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+}
+
+.textos-header h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.textos-header h3 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* footer */
+
+footer {
+    background: rgb(20, 24, 29);
+    padding: 20px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo-final {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: white;
+}
+
+.contenedor {
+    width: 100%;
+    padding: 15px;
+}
+
+.formulario {
+    background: #fff;
+    margin-top: 150px;
+    padding: 50px;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+h1 {
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px;
+}
+
+input[type="text"],
+input[type="password"] {
+    font-size: 20px;
+    width: 70%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border: none;
+}
+
+.formu {
+    margin-top: 50px;
+}
+
+.icon {
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+
+.button {
+    text-align: center;
+    border: none;
+    width: 70%;
+    color: white;
+    font-size: 20px;
+    background: #167F9D;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #1a2537;
+}
+
+p {
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    color: #167F9D;
+    font-weight: 600;
+}
+
+.link:hover {
+    color: cadetblue;
+}
+
+@media(min-width:768px) {
+    .formulario {
+        margin: auto;
+        width: 800px;
+        margin-top: -70px;
+        border-radius: 2%;
+    }
+}
+
+.material-icons {
+    font-size: 130px;
+}
+
+.che {
+    width: 22px;
+    height: 22px;
+    background: #2ecc71;
+    cursor: pointer;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pre {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    box-sizing: border-box;
+}
+
+.borrar {
+    background-color: transparent;
+    border: none;
+}
+
+.borrar span {
+    font-size: 2.5em;
+    color: rgb(60, 150, 211);
+    transition: 0.3s;
+}
+
+.borrar span:hover {
+    font-size: 3.3;
+}
+
+.borrar:focus {
+    outline: none;
+    border: none;
+}
+
+.item div {
+    display: flex;
+}
+
+.item div form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button span {
+    font-size: 1.2em;
+    color: black;
+    transition: 0.3s;
+}
+
+.button span:hover {
+    font-size: 3.3;
+}
+
+.button:focus {
+    outline: none;
+    border: none;
+}
+
+.con span {
+    font-size: 1, 1em;
+    color: black;
+    transition: 0.3s;
+    margin-left: 70px;
+}
+
+.con h2 {
+    margin-top: -120px;
+    margin-left: 300px;
+    font-size: 70px;
+}
+
+.h3 {
+    margin-top: -100px;
+    margin-left: 200px;
+    font-size: 40px;
+}
+
+.tablita {
+    background: rgba(255, 255, 255, 0.7);
+    width: 40%;
+    color: black;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+}
+
+.message {
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 30px;
+    width: 80%;
+    height: 40vh;
+    border: 2px solid #3e5bec;
+}
+
+.messa {
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 30px;
+    width: 900px;
+    height: 60vh;
+    border: 3px solid #000000;
+}
+
+.titu {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 15px;
+}
+
+.bu {
+    border: none;
+    width: 30%;
+    color: white;
+    font-size: 20px;
+    background: rgb(46, 122, 185);
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bu:hover {
+    background: #000000;
+}
+
+.bu2 {
+    border: none;
+    width: 70%;
+    color: white;
+    font-size: 20px;
+    background: rgb(25, 118, 194);
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bu2:hover {
+    background: #000000;
+}
+
+.bu2 span {
+    font-size: 1.2em;
+    color: black;
+    transition: 0.3s;
+}
+
+.bu2 span:hover {
+    font-size: 3.3;
+}
+
+.bu2:focus {
+    outline: none;
+    border: none;
+}
